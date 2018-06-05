@@ -1,0 +1,63 @@
+git init
+* Initializes a git repository – creates the initial .git directory in a new or in
+an existing project. Example:
+*git init
+* Initialized empty Git repository in /home/username/GIT/.git/
+
+git config
+* Sets a configuration values for user name, email. Example :
+*git config --global user.name “your git name”
+*git config --global user.email “your git email id”
+
+git add
+*Adds files changes in your working directory to your index. Example:
+* git add filename.extension
+
+git commit
+* Takes all of the changes written in the index, creates a new commit
+object pointing to it and sets the branch to point to that new commit.
+Examples:
+*it commit -m ‘committing added changes’
+* git commit -a -m ‘committing all changes, equals to git add and git
+commit’
+
+git status
+* Shows you the status of files in the index versus the working directory. It will list
+out files that are untracked (only in your working directory), modified (tracked
+but not yet updated in your index), and staged (added to your index and ready
+for committing). Example:
+* git status
+* # On branch master #
+* # Initial commit #
+* # Untracked files: #
+* # (use "git add <file>..." to include in what will be committed) #
+* README
+
+ git log
+* Shows a listing of commits on a branch including the corresponding details.
+Example:
+* git log commit
+* 84f241e8a0d768fb37ff7ad40e294b61a99a0abe Author: User
+<user@domain.com> Date: Mon May 3 09:24:05 2010 +0300 first
+
+git remote add origin
+* Used to add a new remote. Example :
+* git remote add origin git@github.com:user/UserRepo.git
+
+git push
+* will push your code to the master branch of the remote repository defined
+with origin and -u let you point your current local branch to the remote
+master branch. Example:
+* git push -u origin master
+
+git clone
+* Used to clone or download a project which is already existing on github.
+Example :
+* git clone https://github.com/reponame/project
+
+ git pull
+* will pull changes that are been done on github project to your currently
+existing project. Example:
+* git pull origin master
+* Your project has been updated.
+* Your code is uploaded on github.
